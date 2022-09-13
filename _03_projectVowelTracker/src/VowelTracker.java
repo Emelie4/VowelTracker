@@ -22,7 +22,7 @@ public class VowelTracker {
 		String userVowel = scn.nextLine();
 		int count = 0;
 		for(int v = 0; v < userVowel.length(); v++) {
-			if(userVowel.charAt(v)=='a' || userVowel.charAt(v)=='e' || userVowel.charAt(v)=='i' || userVowel.charAt(v)=='o' || userVowel.charAt(v)=='u') {
+			if(userVowel.toLowerCase().charAt(v)=='a' || userVowel.toLowerCase().charAt(v)=='e' || userVowel.toLowerCase().charAt(v)=='i' || userVowel.toLowerCase().charAt(v)=='o' || userVowel.toLowerCase().charAt(v)=='u') {
 				count++;
 				
 		
