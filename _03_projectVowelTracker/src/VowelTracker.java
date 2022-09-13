@@ -21,15 +21,35 @@ public class VowelTracker {
 		
 		String userVowel = scn.nextLine();
 		int count = 0;
-		for(int v = 0; v < userVowel.length(); v++) {
-			if(userVowel.toLowerCase().charAt(v)=='a' || userVowel.toLowerCase().charAt(v)=='e' || userVowel.toLowerCase().charAt(v)=='i' || userVowel.toLowerCase().charAt(v)=='o' || userVowel.toLowerCase().charAt(v)=='u') {
-				count++;
-				
+		int countA = 0; 
+		int countE = 0;
+		int countI = 0;
+		int countO = 0;
+		int countU = 0;
 		
-			}//end of if statement 
+		for(int v = 0; v < userVowel.length(); v++) {
+			if(userVowel.toLowerCase().charAt(v)=='a') {
+				countA++;
+			}
+			else if(userVowel.toLowerCase().charAt(v)=='e') {
+				countE++;
+			}
+			else if(userVowel.toLowerCase().charAt(v)=='i') {
+				countI++;
+			}
+			else if(userVowel.toLowerCase().charAt(v)=='o') {
+				countO++;
+			}
+			if(userVowel.toLowerCase().charAt(v)=='u') {
+				countU++;
+			}
 		}//end of userVal for loop
 		
-		System.out.println(count);
+		System.out.println("The number of a's is " +countA + "\n"
+				+ "The number of e's is "+ countE+ "\n"
+						+ "The number of i's is " + countI + "\n"
+						+ "The number of o's is "+ countO + "\n"
+								+ "The number of u's is " + countU);
 	
 	}//end of main
 
