@@ -23,7 +23,7 @@ public class VowelTracker {
 		int count = 0;
 		for(int v = 0; v < userVowel.length(); v++) {
 			if(userVowel.charAt(v)=='a' || userVowel.charAt(v)=='e' || userVowel.charAt(v)=='i' || userVowel.charAt(v)=='o' || userVowel.charAt(v)=='u') {
-				++count;
+				count++;
 				
 		
 			}//end of if statement 
